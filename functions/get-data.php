@@ -29,7 +29,7 @@
         $url = $json['html_url'];
         $file_url = $json['assets']['0']['browser_download_url'];
         $uploader = $json['author']['login'];
-        $uploader_url = $json['author']['url'];        
+        $uploader_url = $json['author']['html_url'];        
         $files = $json['assets'][0]['name'];
 
         $date_created = date_format(date_create($created), 'd-m-Y');
