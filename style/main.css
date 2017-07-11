@@ -1,0 +1,117 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+    background-color: #F9F9F9;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+input {
+    font-size: 15px;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-family: "Open Sans";    
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #58D1E3;
+}
+
+input[type="submit"] {
+    background-color: #58D1E3;    
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.centered {
+    margin: 60px auto 0 auto;
+    padding: 25px;
+    width: 600px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 13px rgba(0,0,0,0.1);
+}
+
+form {
+    width: 250px;
+    text-align: center;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 10px auto 20px auto;
+}
+
+.rect {
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin: 7px;
+    width: 600px;
+    background-color: #fff;
+}
+
+p {
+    color: rgba(0,0,0,0.8);
+}
+
+span {
+    color: #000;
+    font-size: 20px;
+}
+
+.rect p img, .rect a img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 5px solid #fff;
+    transition: 500ms ease;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover, a:hover span {
+    border-color: #58D1E3;
+}
+
+.newest {
+    border-top: 5px solid #58D1E3;
+    border-bottom: 5px solid #58D1E3;    
+}
+
+footer {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    margin-bottom: 0;
+}
