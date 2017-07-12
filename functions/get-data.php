@@ -15,10 +15,7 @@
 
     echo "<p align='center'>Downloaded <span>{$total_downloads}</span> times in total</p>";
 
-    ?>
-
-    <div class="flexbox">    
-    <?php
+    echo "<div class=\"flexbox\">";    
 
     for ($i = 0; $i < sizeof($Json); $i++) {
         $json = $Json[$i];
@@ -50,9 +47,5 @@
         </div>
         <?php
     }
-
-    ?>
-    </div>
-    <?php
-
+    echo "</div>";
 ?>
