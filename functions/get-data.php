@@ -32,8 +32,8 @@
         $date_created = date_format(date_create($created), 'd-m-Y');
         $date_updated = date_format(date_create($updated), 'd-m-Y');
 
-        $hour_created = date_format(date_create($created), 'H:i');
-        $hour_updated = date_format(date_create($updated), 'H:i');       
+        $hour_created = date_format(date_add(date_create($created), date_interval_create_from_date_string("2 hours")), 'H:i');
+        $hour_updated = date_format(date_add(date_create($updated), date_interval_create_from_date_string("2 hours")), 'H:i');       
 
         ?>
         <div class="rect">
