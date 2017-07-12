@@ -2,6 +2,6 @@
         </div>
     </body>
     <footer>
-        <a href="http://www.github.com/urankajtazaj" target="_blank">GitHub</a>
+        <a href="https://github.com/urankajtazaj/github-stats" target="_blank">GitHub</a>
     </footer>
 </html>
