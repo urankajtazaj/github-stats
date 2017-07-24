@@ -1,7 +1,7 @@
 html, body {
     padding: 0;
     margin: 0;
-    font-family: "Open Sans";
+    font-family: "Nunito";
     background-color: #F9F9F9;
 }
 
@@ -22,7 +22,7 @@ input {
     border-radius: 4px;
     margin-bottom: 5px;
     width: 100%;
-    font-family: "Open Sans";    
+    font-family: "Nunito";    
 }
 
 input:focus {
@@ -31,8 +31,9 @@ input:focus {
 }
 
 input[type="submit"] {
-    background-color: #58D1E3;    
+    background-color: #222;    
     color: #fff;
+    cursor: pointer;
     padding: 10px;
     font-size: 16px;
 }
@@ -88,7 +89,7 @@ span {
 a {
     color: #000;
     text-decoration: none;
-    border-bottom: 5px solid #58D1E3;
+    border-bottom: 3px solid transparent;
     transition: 500ms ease;
 }
 
@@ -98,7 +99,7 @@ a:visited {
 }
 
 a:hover, a:hover span {
-    background-color: #58D1E3;
+    border-bottom: 3px solid #58D1E3;    
 }
 
 footer {
