@@ -1,6 +1,6 @@
 <form class="centered" method="get" action="index.php">
-    <h2><img src="photo/gh.png" width="35" height="35" alt="Github"><br>Release stats</h2>
-    <input type="text" id="name" name="user" placeholder="GitHub Username">
+    <h1><img src="photo/gh.png" width="30" height="30" title="Github" alt="Github"> Release stats</h1>
+    <input type="text" id="name" name="user" placeholder="Github Username">
     <input type="text" id="repo" name="repository" placeholder="Repository name">
     <input type="submit" name="submit" value="Get release stats">
 </form>

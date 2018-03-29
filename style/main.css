@@ -5,6 +5,20 @@ html, body {
     background-color: #F9F9F9;
 }
 
+h1 {
+    font-weight: lighter;
+}
+
+.centered h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered > h1 > img {
+    margin-right: 8px;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -32,8 +46,9 @@ input:focus {
 }
 
 input[type="submit"] {
-    background-color: #222;    
+    background-color: royalblue;    
     color: #fff;
+    cursor: pointer;
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
