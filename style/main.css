@@ -1,7 +1,7 @@
 html, body {
     padding: 0;
     margin: 0;
-    font-family: "Open Sans";
+    font-family: "Roboto";
     background-color: #F9F9F9;
 }
 
@@ -17,24 +17,26 @@ body {
 
 input {
     font-size: 15px;
-    padding: 6px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     width: 100%;
     font-family: "Open Sans";    
+    transition: 200ms ease;
 }
 
 input:focus {
     outline: none;
-    border: 1px solid #58D1E3;
+    border: 1px solid #999;
 }
 
 input[type="submit"] {
-    background-color: #58D1E3;    
+    background-color: #222;    
     color: #fff;
     padding: 10px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .centered {
@@ -44,7 +46,8 @@ input[type="submit"] {
     box-sizing: border-box;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0px 0px 13px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+    /* box-shadow: 0px 0px 13px rgba(0,0,0,0.1); */
 }
 
 form {
@@ -65,7 +68,8 @@ form {
     box-sizing: border-box;
     padding: 25px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    /* box-shadow: 0px 0px 10px rgba(0,0,0,0.1); */
+    border: 1px solid #eee;
     margin: 7px;
     width: 600px;
     background-color: #fff;
@@ -76,8 +80,14 @@ p {
 }
 
 span {
-    color: #000;
+    /* color: #000; */
+    font-weight: lighter;
     font-size: 20px;
+}
+
+.txt-lg {
+    font-size: 50px;
+    font-weight: lighter;
 }
 
 .rect p img, .rect a img {
@@ -85,11 +95,19 @@ span {
     vertical-align: middle;
 }
 
-a {
+a, span {
+    /* padding: 3px 5px; */
     color: #000;
     text-decoration: none;
-    border-bottom: 5px solid #58D1E3;
     transition: 500ms ease;
+    color: royalblue;
+    border-bottom: 1px solid transparent;
+    /* background-color: rgb(226, 255, 235); */
+    /* border-radius: 20px;     */
+}
+
+a {
+    border-color: #888;
 }
 
 a:visited {
@@ -97,8 +115,10 @@ a:visited {
     color: #000;
 }
 
-a:hover, a:hover span {
-    background-color: #58D1E3;
+a:hover {
+    /* background-color: rgb(170, 255, 208); */
+    border-color: royalblue;
+    /* color: #fff; */
 }
 
 footer {

@@ -13,7 +13,7 @@
         $total_downloads += $json['assets']['0']['download_count'];
     }
 
-    echo "<p align='center'>Downloaded <span>{$total_downloads}</span> times in total</p>";
+    echo "<p align='center'>Total downloads<br><span class='txt-lg'>{$total_downloads}</span></p>";
 
     echo "<div class=\"flexbox\">";    
 
