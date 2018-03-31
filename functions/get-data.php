@@ -13,7 +13,7 @@
         $total_downloads += $json['assets']['0']['download_count'];
     }
 
-    echo "<p align='center'>Total downloads<br><span class='txt-lg'>{$total_downloads}</span></p>";
+    echo "<p align='center'>Total downloads<br><span class='txt-lg'>" . number_format($total_downloads) . "</span></p>";
 
     echo "<div class=\"flexbox\">";    
 
@@ -39,10 +39,10 @@
         <div class="rect">
             <h1><?= "<a href='{$url}' target='_blank'>{$name}</a>"; ?></h1>
             <p>Uploaded by 
-                <?= "<a href='{$uploader_url}' target='_blank'><span>{$uploader}</span></a> on <span>{$date_created}</span> at <span>{$hour_created}</span>"; ?></p>
-            <p>Last updated on <?= "<span>{$date_updated}</span> at <span>{$hour_updated}</span>"?></p>
+                <?= "<a href='{$uploader_url}' target='_blank'>{$uploader}</a> on {$date_created} at {$hour_created}"; ?></p>
+            <p>Last updated on <?= "{$date_updated} at {$hour_updated}"?></p>
             <p><img src="photo/download-arrow.png" alt="Download">
-            Downloaded <span><?= $download_count ?></span> times</p>
+            Downloaded <span><?= number_format($download_count) ?></span> times</p>
             <a href="<?= $file_url; ?>"><img src="photo/file.png" alt="Files"> <?= $files; ?></a>
         </div>
         <?php
